@@ -20,7 +20,7 @@ pipeline {
             }
         }
         
-        stage('Build') {
+        stage('Build and Create Artifact') {
             steps {
                 // Build the Angular application
                 sh 'npm run build'
